@@ -1,8 +1,10 @@
 
 var msg_id;
+var  share_value;
 $(function() {
     var  layer=layui.layer;
-
+    share_value= getQueryVariable("id")
+    $("#code_shar").val(share_value);
     $('#codes').click(function () {
         // alert("dsds");
         var  phone_value = $("#phone").val();
